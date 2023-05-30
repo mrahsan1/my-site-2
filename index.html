@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autixir</title>
+    <link rel="stylesheet" href="assets/css/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+      <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+      <!-- Owl Carasoul Stylesheets Links -->
+      <!-- <link rel="stylesheet" href="/assets/slider/css/docs.theme.min.css"> -->
+      <link rel="stylesheet" href="/assets/slider/owlcarousel/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="/assets/slider/owlcarousel/assets/owl.theme.default.min.css">
+      <!-- Carasoul End  javascript -->
+</head>
+<style>
+@media (min-width: 1200px){
+  .navbar-bottom.scrolled {
+  padding-top: 25px;
+   padding-bottom: 15px;
+   background-color: #fff;
+   transition: background-color 0.5s ease;
+   box-shadow:  0 16px 32px 0 rgba(7, 28, 31, 0.1);
+   transition: 0.2s all ease-in;
+ }
+}
+
+</style>
+<body>
+    <b class="screen-overlay"></b>
+    <a id="button" class="d-flex">
+      <i class="fa fa-angle-up"></i>
+    </a>
+          <!-- Header Navbar Here -->
+<header>
+    <!-- First Navbar Here -->
+ <div class="navbar-top ">
+   <div class="container">
+     <div class="row">
+      <div class="col-md-7 mb-2 mb-md-0  ">
+       <ul class="list-unstyled first-li d-flex justify-content-md-start justify-content-center">
+        <li class=""><a href=""> <i class="fa fa-envelope" aria-hidden="true"></i><span class="ps-2">info@webmail.com</span></a></li>
+       <li class="ps-5"><a href=""><i class="fa fa-map-marker" aria-hidden="true"></i><span class="ps-2">15/A, Nest Tower, NYC</span> </a></li>
+       </ul>
+      </div>
+      <div class="col-md-5 mb-2 mb-md-0">
+       <ul class="list-unstyled second-li d-flex justify-content-md-end justify-content-center text-center">
+        <li class=" dropdown">
+            <a class=" dropdown-toggle pe-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            English <i class="fa-solid fa-arrow-down"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <li><a class="dropdown-item" href="#">Action</a></li>
+             <li><a class="dropdown-item" href="#">Another action</a></li>
+             <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </li> 
+        <li class="social-icons">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-dribbble"></i></a>
+         </li>
+         </ul>
+          </div>
+         </div>
+     </div>
+ </div>
+</header>
+    <!-- Second Navbar Here -->
+<div class="navbar-bottom  sticky-lg-top " id="navbar-bottom">
+    <div class="container">
+     <div class="row">
+      <div class="col-lg-4 col-md-6 mb-3 mb-lg-0 order-1  order-lg-1">
+       <div class="brand-title d-flex justify-content-center justify-content-lg-start">
+        <div class="brand-img">
+            <img src="/assets/images/logo.png" alt="">
+        </div>
+        <div class="brand-contact d-flex align-items-center">
+        <i class="fa fa-phone d-none d-md-block" aria-hidden="true"></i>
+        <div class="contact-info ">
+          <h5>Get Support</h5>
+          <h4> <a href="">123-456-789-10</a></h4>
+        </div>
+        </div>
+       </div>
+       </div>
+       <div class="col-lg-3 col-md-6 d-flex justify-content-center order-2 order-lg-3">
+        <ul class="list-unstyled d-flex cart-ul ps-lg-5 ">
+         <li class="main-box ">
+          <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+         </li>
+        <li class="dropdown main-box ">
+                <a class=" dropdown-toggle  " href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-user" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <li><a class="dropdown-item" href="#">Action</a></li>
+                 <li><a class="dropdown-item" href="#">Another action</a></li>
+                 <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+        </li>
+        <li class="main-box">
+         <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+        </ul>
+        <div class="navbar2  ms-2 main-box  d-lg-none">
+            <button data-trigger="#navbar_main" class="navbar-toggler" type="button"><span><i class="fa-solid fa-bars"></i></span></button>
+        </div>
+      </div>
+      <div class="col-lg-5 order-3 order-lg-2 d-flex align-items-center ">
+        <div id="navbar_main" class="mobile-offcanvas d-flex">
+            <div class=" nav-cont">
+              <div class="offcanvas-header d-flex justify-content-between py-5 d-none d-lg-none">
+                <div>
+                  <img src="/assets/images/logo.png" alt="">
+                </div>
+                <button class="navbar-toggler btn-close"><span class="navbar-toggler-icon"></span></button>
+              </div>
+              <ul class="d-lg-flex navbar-ul list-unstyled">
+                <div class="search-bar position-relative d-block d-lg-none">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                  <input type="email" class="form-control"  placeholder="Search....">
+                </div>
+                <li class="dropdown">
+                    <a class=" dropdown-toggle  d-flex d-lg-block justify-content-lg-start justify-content-between " href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Home <i class="fa fa-plus" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" href="#">Action</a></li>
+                     <li><a class="dropdown-item" href="#">Another action</a></li>
+                     <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class=" dropdown-toggle d-flex d-lg-block justify-content-lg-start justify-content-between " href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     About <i class="fa fa-plus" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" href="#">Action</a></li>
+                     <li><a class="dropdown-item" href="#">Another action</a></li>
+                     <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class=" dropdown-toggle  d-flex d-lg-block justify-content-lg-start justify-content-between " href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Shop <i class="fa fa-plus" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" href="#">Action</a></li>
+                     <li><a class="dropdown-item" href="#">Another action</a></li>
+                     <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class=" dropdown-toggle  d-flex d-lg-block justify-content-lg-start justify-content-between " href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     News <i class="fa fa-plus" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" href="#">Action</a></li>
+                     <li><a class="dropdown-item" href="#">Another action</a></li>
+                     <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class=" dropdown-toggle  d-flex d-lg-block justify-content-lg-start justify-content-between " href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Pages <i class="fa fa-plus" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" href="#">Action</a></li>
+                     <li><a class="dropdown-item" href="#">Another action</a></li>
+                     <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+     </div>
+    </div>
+ </div>
+
+   <!-- Banner Starts Here -->
+<div class="banner">
+    <div class="container">
+        <div class="row">
+         <div class="col-12">
+          <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+             <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active me-3" aria-current="true" aria-label="Slide 1"></button>
+             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           </div>
+           <div class="carousel-inner">
+           <div class="carousel-item active">
+            <div class="row d-flex justify-content-between">
+             <div class="col-lg-5">
+                <div class="tap-box mb-5  tap-box-border d-flex justify-content-center align-items-center">
+                    <a href=""><i class="fa-solid fa-play"></i></a>
+                </div>
+                <div class="tap-box-text">
+                    <h1>Providing A Professional & Relaible Service </h1>
+                    <p><span>//</span> TALENTED ENGINEER & MECHANICS</p>
+                </div>
+             </div>
+             <div class="col-1"></div>
+             <div class="col-lg-6 pt-3 pt-lg-5 mb-lg-0 mb-4  ">
+              <img src="/assets/images/Car slider/car-slider-1.png" alt="" class="img-fluid">
+             </div>
+             
+             </div>
+           </div>
+           <div class="carousel-item ">
+           <div class="row d-flex justify-content-between">
+            <div class="col-lg-5 order-lg-3">
+                <div class="tap-box-text text-end ">
+                  <p><span>// TALENTED ENGINEER & MECHANICS</span></p>
+                  <h1>Professional Car Service Provider</h1>
+                  <h6 class="border-p pe-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</h6>
+                  <div class="mt-5 d-flex justify-content-end">
+                   <a href="" class="btn-1 text-white me-3">our Service</a>
+                   <a href="" class="btn-2  ">Learn more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1 order-lg-2"></div>
+            <div class="col-lg-6 order-lg-1  pt-3 pt-lg-5 mb-lg-0   ">
+                <img src="/assets/images/Car slider/car-slider-2.png" alt="" class="img-fluid">
+               </div>
+
+            </div>
+           </div>
+           </div>
+           <div class="button-slider">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+              <span class="visually-hidden">Previous</span>
+             </button>
+             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <span class="visually-hidden">Next</span>
+             </button>
+             </div>
+          </div>
+
+         </div>
+        </div>
+       </div>
+
+</div>
+   <!-- Banner Ends Here -->
+<main>
+  <!-- Section 1 Start Here -->
+<section class="section-1 ">
+ <div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+          <div class="card-1 position-relative">
+            <div class="img-div-2 ">
+              <div class="expert-section text-center img-div ">
+                <div class="expert-logo">
+                    <i class="fas fa-car"></i>
+                  </div>
+                <div class="expert-text  px-2">
+                    <h2><a href="" class="text-white">Reasonable Price</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+                <div class="middle">
+                  <a href="" class="btn-learn text-center">Learn More</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-md-0 mb-4 ">
+          <div class="card-1 position-relative center-card">
+            <div class="img-div-2 ">
+              <div class="expert-section center-card-top text-center img-div ">
+                <div class="expert-logo">
+                    <i class="fas fa-car text-white"></i>
+                  </div>
+                <div class="expert-text  px-2">
+                    <h2><a href="" class="text-white">Reasonable Price</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+                <div class="middle">
+                  <a href="" class="btn-learn text-center">Learn More</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-md-0 mb-4  mx-auto">
+          <div class="card-1 position-relative">
+            <div class="img-div-2 ">
+              <div class="expert-section  bg-white text-center img-div ">
+                <div class="expert-logo ">
+                    <i class="fas fa-car text-dark"></i>
+                  </div>
+                <div class="expert-text text-dark  px-2">
+                    <h2><a href="" class="">Fast Feature Delivery</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+                <div class="middle">
+                  <a href="" class="btn-learn text-center">Learn More</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+    </div>
+ </div>
+</section>
+  <!-- Section 1 End Here -->
+
+  <!-- Section 2 Starts Here -->
+<section class="section-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="about-us">
+          <p>// About Us</p>
+          <h1>Safety Is Our First Priority<span>.</span></h1>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</h4>
+        </div>
+        <div class="row">
+          <div class="col-md-6 about-us-p pe-0 ">
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="about-us-ul list-unstyled ">
+              <li><span><i class="fa-solid fa-check"></i></span><a href="" class="">24/7 Online Support</a></li>
+              <li><span><i class="fa-solid fa-check"></i></span><a href="" class="">Expert Team</a></li>
+              <li><span><i class="fa-solid fa-check"></i></span><a href="">Pure Equipment</a></li>
+              <li><span><i class="fa-solid fa-check"></i></span><a href="">Unlimited Product</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="form-car">
+          <h4 class="mb-4">Get A Quote</h4>
+          <form action="">
+            <div class="input-field position-relative">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name">
+            </div>
+            <div class="input-field position-relative">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email">
+            </div>
+            <div class="input-field position-relative">
+              <i class="fa-solid fa-arrow-down"></i>
+              <select class="select-option form-control fw-bold" style=" height: 65px;">
+                <option><b>Select Car Type</b></option>
+                <option>New Car</option>
+                <option>Used Car</option>
+              </select>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="" class="d-flex justify-content-center get-btn text-white">get an appointment</a>
+              </div>
+          </form>
+
+        </div>
+    </div>
+    </div>
+  </div>
+</section>
+  <!-- Section 2 Ends Here -->
+
+  <!-- Section 3 Starts Here -->
+<section class="section-3">
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="about-us text-center">
+        <p>// SERVICE</p>
+        <h1>What We Do<span>.</span></h1>
+
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="service-main">
+        <div class="service-icon">
+          <i class="fa-solid fa-car"></i>
+        </div>
+        <div class="service-text">
+          <p>// TIRE AND WHEEL</p>
+          <h4><a class="" href="">There are many variations of passages of Lorem.</a></h4>
+          <ul class="list-unstyled">
+            <li><span>//</span> Tire puncher with cleaning</li>
+            <li><span>//</span> Tire Customization</li>
+            <li><span>//</span> Tire check & fixing</li>
+            <li><span>//</span> Tire change & color</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="service-main">
+        <div class="service-icon">
+          <i class="fa-solid fa-user-secret"></i>
+          </div>
+        <div class="service-text">
+          <p>// DRIVABILITY PROBLEMS</p>
+          <h4><a class="" href="">majority have suffered alteration in some form.</a></h4>
+          <ul class="list-unstyled">
+            <li><span>//</span> Tire puncher with cleaning</li>
+            <li><span>//</span> Tire Customization</li>
+            <li><span>//</span> Tire check & fixing</li>
+            <li><span>//</span> Tire change & color</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mx-auto">
+      <div class="service-main">
+        <div class="service-icon">
+          <i class="fa fa-cog" aria-hidden="true"></i>
+        </div>
+        <div class="service-text">
+          <p>// AUTOMOTIVE FILTERS</p>
+          <h4><a class="" href="">Excellece in automotive services since 1996.</a></h4>
+          <ul class="list-unstyled">
+            <li><span>//</span> Tire puncher with cleaning</li>
+            <li><span>//</span> Tire Customization</li>
+            <li><span>//</span> Tire check & fixing</li>
+            <li><span>//</span> Tire change & color</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+  <!-- Section 3 Ends Here -->
+
+  <!-- Section 4 Starts Here -->
+<section class="section-4">
+  <div class="section-4-bottom">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="about-us text-md-left text-center">
+        <p class="text-white ">// ACTIVITY</p>
+        <h1 class="text-white">It’s Our Journey<span>.</span></h1>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-6 mb-4 mb-lg-0 ">
+      <div class="counter text-md-left text-center">
+        <p class="mb-0">//</p>
+        <div class="d-flex justify-content-center justify-content-md-start">
+          <h1 class=" text-center">
+            <span id="count1" class="display-4 text-white text-md-left text-center "></span><span class="text-white">+</span>
+          </h1>
+      </div>
+        <p class="text-white fw-bold ">Active Clients</p>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-6 mb-4 mb-lg-0">
+      <div class="counter text-md-left text-center">
+        <p class="mb-0">//</p>
+        <div class="d-flex justify-content-center justify-content-md-start">
+          <h1 class="text-white">
+            <span id="count2" class="display-4 text-white"></span>K<span class="text-white">+</span>
+          </h1>
+      </div>
+        <p class="text-white fw-bold ">Cup Of Coffee</p>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-6 mb-4 mb-lg-0">
+      <div class="counter text-md-left text-center">
+        <p class="mb-0">//</p>
+        <div class="d-flex justify-content-center justify-content-md-start">
+          <h1 class="text-white">
+            <span id="count3" class="display-4 text-white"></span><span class="text-white">+</span>
+          </h1>
+      </div>
+        <p class="text-white fw-bold ">Get Rewards</p>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-6 mb-4 mb-lg-0">
+      <div class="counter text-md-left text-center">
+        <p class="mb-0">//</p>
+        <div class="d-flex justify-content-center justify-content-md-start">
+          <h1 class="text-white">
+            <span id="count4" class="display-4 text-white"></span><span class="text-white">+</span>
+          </h1>
+      </div>
+        <p class="text-white fw-bold ">Country Cover</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+  <!-- Section 4 Ends Here -->
+
+  <!-- Section 5 Starts Here -->
+<section class="section-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="about-us text-center">
+          <p>// TEAM</p>
+          <h1>Our Mechanics<span>.</span></h1>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-lg-0 mb-4">
+        <div class="image-overlay position-relative">
+          <div class="image-overlay-top">
+            <img src="/assets/images/Our team/4 (1).jpg" alt="" class="img-fluid">
+          </div>
+          <div class="image-overlay-text text-center mb-4">
+            <p>// FOUNDER //</p>
+            <h5 class="fw-bold ">Rosalina D. William</h5>
+          </div>
+          <div class="middle-1 mt-2 ">
+              <ul class="list-unstyled d-flex justify-content-center align-items-center  ">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link px-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-lg-0 mb-4">
+        <div class="image-overlay position-relative">
+          <div class="image-overlay-top">
+            <img src="/assets/images/Our team/2 (1).jpg" alt="" class="img-fluid">
+          </div>
+          <div class="image-overlay-text text-center mb-4">
+            <p>// FOUNDER //</p>
+            <h5 class="fw-bold ">Rosalina D. William</h5>
+          </div>
+          <div class="middle-1 ">
+              <ul class="list-unstyled d-flex justify-content-center align-items-center  ">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link px-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-lg-0 mb-4">
+        <div class="image-overlay position-relative">
+          <div class="image-overlay-top">
+            <img src="/assets/images/Our team/5 (1).jpg" alt="" class="img-fluid">
+          </div>
+          <div class="image-overlay-text text-center mb-4">
+            <p>// FOUNDER //</p>
+            <h5 class="fw-bold ">Rosalina D. William</h5>
+          </div>
+          <div class="middle-1 ">
+              <ul class="list-unstyled d-flex justify-content-center align-items-center  ">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link px-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-lg-0 mb-4">
+        <div class="image-overlay position-relative">
+          <div class="image-overlay-top">
+            <img src="/assets/images/Our team/1 (1).jpg" alt="" class="img-fluid">
+          </div>
+          <div class="image-overlay-text text-center mb-4">
+            <p>// FOUNDER //</p>
+            <h5 class="fw-bold ">Rosalina D. William</h5>
+          </div>
+          <div class="middle-1 ">
+              <ul class="list-unstyled d-flex justify-content-center align-items-center  ">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link px-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Section 5 Ends Here -->
+
+  <!-- Section 6 Starts Here -->
+<section class="section-6">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="owl-carousel owl-theme position-relative">
+          <div class="item slider-main position-relative ">
+              <div class="slider-img overflow-hidden  ">
+                <img src="/assets/images/Trouble shooting/11.jpg" alt="" class="img-fluid banner-grid-image-2">
+              </div>
+              <div class="slider-text d-flex justify-content-between  ">
+                <div class="d-flex flex-column">
+                <span>//  trouble shooting</span>
+                <a class="pt-1" href="">Hilix Nova Car Solutions.</a>
+              </div>
+                <div class="d-flex justify-content-end">
+                  <a class="" href=""><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+          </div>
+          <div class="item slider-main position-relative ">
+            <div class="slider-img overflow-hidden  ">
+              <img src="/assets/images/Trouble shooting/12.jpg" alt="" class="img-fluid banner-grid-image-2">
+            </div>
+            <div class="slider-text d-flex justify-content-between  ">
+              <div class="d-flex flex-column">
+              <span>//  trouble shooting</span>
+              <a class="pt-1" href="">Hilix Nova Car Solutions.</a>
+            </div>
+              <div class="d-flex justify-content-end">
+                <a class="" href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+        </div>
+        <div class="item slider-main position-relative ">
+          <div class="slider-img overflow-hidden  ">
+            <img src="/assets/images/Trouble shooting/13.jpg" alt="" class="img-fluid banner-grid-image-2">
+          </div>
+          <div class="slider-text d-flex justify-content-between  ">
+            <div class="d-flex flex-column">
+            <span>//  trouble shooting</span>
+            <a class="pt-1" href="">Hilix Nova Car Solutions.</a>
+          </div>
+            <div class="d-flex justify-content-end">
+              <a class="" href=""><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+      </div>
+      <div class="item slider-main position-relative ">
+        <div class="slider-img overflow-hidden  ">
+          <img src="/assets/images/Trouble shooting/11.jpg" alt="" class="img-fluid banner-grid-image-2">
+        </div>
+        <div class="slider-text d-flex justify-content-between  ">
+          <div class="d-flex flex-column">
+          <span>//  trouble shooting</span>
+          <a class="pt-1" href="">Hilix Nova Car Solutions.</a>
+        </div>
+          <div class="d-flex justify-content-end">
+            <a class="" href=""><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+    </div>
+    <div class="item slider-main position-relative ">
+      <div class="slider-img overflow-hidden  ">
+        <img src="/assets/images/Trouble shooting/12.jpg" alt="" class="img-fluid banner-grid-image-2">
+      </div>
+      <div class="slider-text d-flex justify-content-between  ">
+        <div class="d-flex flex-column">
+        <span>//  trouble shooting</span>
+        <a class="pt-1" href="">Hilix Nova Car Solutions.</a>
+      </div>
+        <div class="d-flex justify-content-end">
+          <a class="" href=""><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+  </div>
+  <div class="item slider-main position-relative ">
+    <div class="slider-img overflow-hidden  ">
+      <img src="/assets/images/Trouble shooting/13.jpg" alt="" class="img-fluid banner-grid-image-2">
+    </div>
+    <div class="slider-text d-flex justify-content-between  ">
+      <div class="d-flex flex-column">
+      <span>//  trouble shooting</span>
+      <a class="pt-1" href="">Hilix Nova Car Solutions.</a>
+    </div>
+      <div class="d-flex justify-content-end">
+        <a class="" href=""><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Section 6 Ends Here -->
+
+  <!-- Section 7 Starts Here -->
+<section class="section-7">
+  <div class="container position-relative">
+    <img src="/assets//images/Call-action.png" alt="" class=" img-fluid action-image">
+    <div class="row action-top">
+      <div class="col-lg-5">
+        <div class="action-bottom position-relative">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+      </div>
+    </div>
+      <div class="col-lg-7 d-flex justify-content-center align-items-center">
+        <div class="action-text text-center  ">
+          <p>// CALL TO ACTION //</p>
+          <h1>Get A Free Car Service <span>.</span></h1>
+          <a href="" class="text-uppercase action-btn text-white"> get an appointment</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section> 
+  <!-- Section 7 Ends Here -->
+
+  <!-- Section 8 Starts Here -->
+<section>
+</section>
+  <!-- Section 8 Ends Here -->
+
+  <!-- Section 9 Starts Here -->
+<section class="section-8">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="about-us text-center">
+          <p>// BLOG & INSIGHTS</p>
+          <h1>News Feeds<span>.</span></h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="loop-2 owl-carousel owl-theme">
+          <div class="item">
+           <div class="news-feed ">
+            <div class="news-feed-2"></div>
+            <div class="news-feed-text   ">
+              <ul class="list-unstyled d-flex">
+                <li class=""><a class="" href=""><i class="fa fa-user " aria-hidden="true"></i><span class="ps-2">by :Admin</span></a></li>
+                <li class="ps-4"><a class="" href=""><i class="fa fa-wrench" aria-hidden="true"></i><span class="ps-2">Services</span></a></li>
+              </ul>
+              <h3><a href="" class="">Electric Car Maintenance, Servicing & Repairs</a></h3>
+              <p class="">Lorem ipsum labore et dolore mag na aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <ul class="list-unstyled d-flex justify-content-between pt-2">
+                <li class=""><a class="" href=""><i class="fa fa-calendar" aria-hidden="true"></i><span class="ps-2">June 24,2020</span></a></li>
+                <li class="ps-4"><a class="" href=""><span class="ps-2 read-more">Read More</span></a></li>
+              </ul>
+            </div>
+           </div>
+          </div>
+          <div class="item">
+            <div class="news-feed2 ">
+             <div class="news-feed-2"></div>
+             <div class="news-feed-text   ">
+               <ul class="list-unstyled d-flex">
+                 <li class=""><a class="" href=""><i class="fa fa-user " aria-hidden="true"></i><span class="ps-2">by :Admin</span></a></li>
+                 <li class="ps-4"><a class="" href=""><i class="fa fa-wrench" aria-hidden="true"></i><span class="ps-2">Services</span></a></li>
+               </ul>
+               <h3><a href="" class="">Common Engine Oil Problems and Solutions</a></h3>
+               <p class="">Lorem ipsum labore et dolore mag na aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+               <ul class="list-unstyled d-flex justify-content-between pt-2">
+                 <li class=""><a class="" href=""><i class="fa fa-calendar" aria-hidden="true"></i><span class="ps-2">June 24,2020</span></a></li>
+                 <li class="ps-4"><a class="" href=""><span class="ps-2 read-more">Read More</span></a></li>
+               </ul>
+             </div>
+            </div>
+           </div>
+           <div class="item mb-lg-0 mb-4">
+            <div class="news-feed3 ">
+             <div class="news-feed-2"></div>
+             <div class="news-feed-text   ">
+               <ul class="list-unstyled d-flex">
+                 <li class=""><a class="" href=""><i class="fa fa-user " aria-hidden="true"></i><span class="ps-2">by :Admin</span></a></li>
+                 <li class="ps-4"><a class="" href=""><i class="fa fa-wrench" aria-hidden="true"></i><span class="ps-2">Services</span></a></li>
+               </ul>
+               <h3><a href="" class="">How to Prepare for your First Track Day!</a></h3>
+               <p class="">Lorem ipsum labore et dolore mag na aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+               <ul class="list-unstyled d-flex justify-content-between pt-2">
+                 <li class=""><a class="" href=""><i class="fa fa-calendar" aria-hidden="true"></i><span class="ps-2">June 24,2020</span></a></li>
+                 <li class="ps-4"><a class="" href=""><span class="ps-2 read-more">Read More</span></a></li>
+               </ul>
+             </div>
+            </div>
+           </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Section 9 Ends Here -->
+</main>
+  <!-- Footer 1st Starts Here -->
+<footer class=" footer-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-5 ">
+          <div class="footer-col1">
+            <p>// TIME SHEDULE</p>
+            <h4>Meet In Timeline.</h4>
+            <ul class="list-unstyled">
+              <li class="d-flex justify-content-between">Monday <span class="text-end">07:00AM - 20:00PM</span></li>
+              <li class="d-flex justify-content-between">Tuesday <span class="text-end">07:00AM - 20:00PM</span></li>
+              <li class="d-flex justify-content-between">Wednesday <span class="text-end">07:00AM - 20:00PM</span></li>
+              <li class="d-flex justify-content-between">Thursday <span class="text-end">07:00AM - 20:00PM</span></li>
+              <li class="d-flex justify-content-between">Friday <span class="text-end">07:00AM - 20:00PM</span></li>
+              <li class="d-flex justify-content-between">Saturday <span class="text-end">07:00AM - 20:00PM</span></li>
+              <li class="d-flex justify-content-between">Sunday <span class="text-end" style="color: #e53e29 ; font-weight: 700 !important;">Official Holiday</span></li>
+          </ul>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-7 mb-md-0 mb-4 ">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="service-tag">Services.</h3>
+            </div>
+          <div class="col-md-6">
+          <div class="footer-col2">
+            <ul class="list-unstyled">
+              <li><span >//&nbsp&nbsp</span><a href="" class="">Engine Diagnostics</a></li>
+              <li><span >//&nbsp&nbsp</span><a href="" class="">Vehicles Damaged</a></li>
+              <li><span >//&nbsp&nbsp</span><a href="" class="">Air Conditioning Evac</a></li>
+              <li><span >//&nbsp&nbsp</span><a href="" class="">Anti Lock Brake Service</a></li>
+              <li><span >//&nbsp&nbsp</span><a href="" class="">Computer Diagnostics</a></li>
+              <li><span >//&nbsp&nbsp</span><a href="" class="">Performance Upgrades</a></li>
+          </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="footer-col2">
+            <ul class="list-unstyled">
+              <li><span >//&nbsp&nbsp</span><a href="" class="">Car Wash & Cleaning</a></li>
+              <li><span >//&nbsp&nbsp</span><a href="" class="">Choose your Repairs</a></li>
+              <li><span >//&nbsp&nbsp</span><a href="" class="">Free Consultancy</a></li>
+              <li><span >//&nbsp&nbsp</span><a href="" class="">Computer Diagnostics</a></li>
+              <li><span >//&nbsp&nbsp</span><a href="" class="">Emergency Time</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="col-lg-3 col-md-6 ">
+          <div class="row">
+            <div class="col-12 mb-2">
+              <h3 class="news-feed-tag">News Feeds.</h3>
+            </div>
+            <div class="col-12 mb-2">
+              <div class="footer-col3">
+                <p><i class="fa fa-calendar" aria-hidden="true"></i><span class="ps-1"> June 24, 2020</span></p>
+                <h3><a href="">The branch of biology that deals with the normal.</a></h3>
+              </div>  
+            </div>
+            <div class="col-12 ">
+              <div class="footer-col3">
+                <p><i class="fa fa-calendar" aria-hidden="true"></i><span class="ps-1"> June 24, 2020</span></p>
+                <h3><a href="">Electric Car Maintenance, Servicing & Repairs</a></h3>
+              </div>  
+            </div>
+            <div class="col-12">
+              <div class="footer-col3">
+                <p><i class="fa fa-calendar" aria-hidden="true"></i><span class="ps-1"> June 24, 2020</span></p>
+                <h3 style="border:none ;"><a href="">The branch of biology that deals with the normal.</a></h3>
+              </div>  
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</footer>
+  <!-- Footer 1st Ends Here -->
+
+  <!-- Footer 2nd Starts Here -->
+<footer class="footer-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 d-flex mb-md-0 mb-3 justify-content-center justify-content-lg-start align-items-baseline">
+        <div class="footer-logo  ">
+          <img src="/assets/images/logo.png" alt="" class="img-fluid">
+
+        </div>
+        <div class="footer-copyright d-flex  flex-column justify-content-center mb-lg-0 mb-2">
+          <h5>Copyright & Design By</h5>
+          <h4 class="">Example - 2023</h4>
+
+        </div>
+      </div>
+      <div class="col-md-6 align-self-center d-flex justify-content-center justify-content-md-end mb-lg-0 mb-2">
+        <div class="footer-2-ul d-flex d-flex justify-content-end ">
+          <ul class="list-unstyled d-flex d-inline-block  ">
+            <li><a href="" class="">Terms & Conditions</a></li>
+            <li><a href="" class="">Claim</a></li>
+            <li><a href="" class="">Privacy & Policy</a></li>
+              
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</footer>
+  <!-- Footer 2nd Starts Here -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <!-- JS for Navbar here -->
+ <script id="rendered-js">
+    /// some script
+    
+    // jquery ready start
+    $(document).ready(function () {
+      // jQuery code
+    
+      $("[data-trigger]").on("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var offcanvas_id = $(this).attr("data-trigger");
+        $(offcanvas_id).toggleClass("show");
+        $("body").toggleClass("offcanvas-active");
+        $(".screen-overlay").toggleClass("show");
+      });
+    
+      // Close menu when pressing ESC
+      $(document).on("keydown", function (event) {
+        if (event.keyCode === 27) {
+          $(".mobile-offcanvas").removeClass("show");
+          $("body").removeClass("overlay-active");
+        }
+      });
+    
+      $(".btn-close, .screen-overlay").click(function (e) {
+        $(".screen-overlay").removeClass("show");
+        $(".mobile-offcanvas").removeClass("show");
+        $("body").removeClass("offcanvas-active");
+      });
+    }); // jquery end
+    //# sourceURL=pen.js
+</script>
+  <!-- Count Js Here -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+ function counter(id, start, end, duration) {
+  let obj = document.getElementById(id),
+   current = start,
+   range = end - start,
+   increment = end > start ? 1 : -1,
+   step = Math.abs(Math.floor(duration / range)),
+   timer = setInterval(() => {
+    current += increment;
+    obj.textContent = current;
+    if (current == end) {
+     clearInterval(timer);
+    }
+   }, step);
+ }
+ counter("count1", 0, 733,0,100);
+ counter("count2", 100, 33, 100);
+ counter("count3", 0, 100, 1000);
+ counter("count4", 0, 21, 1000);
+
+});
+  </script>
+  <!-- Slider Js here -->
+  <script>
+    $(document).ready(function() {
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        loop: true,
+        nav: true,
+        margin: 10,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          960: {
+            items: 5
+          },
+          1200: {
+            items: 3
+          }
+        }
+      });
+      owl.on('mousewheel', '.owl-stage', function(e) {
+        if (e.deltaY > 0) {
+          owl.trigger('next.owl');
+        } else {
+          owl.trigger('prev.owl');
+        }
+        e.preventDefault();
+      });
+    })
+  </script>
+  <!-- navbar js here -->
+<script>
+  $(document).ready(function() {
+$(window).scroll(function() {
+  var scrollTop = $(window).scrollTop();
+  if (scrollTop > 0) {
+    $('.navbar-bottom').addClass('scrolled');
+  } else {
+    $('.navbar-bottom').removeClass('scrolled');
+  }
+});
+});
+</script>
+
+  <!-- scroll top js here -->
+<script>
+  var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+</script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+<script src="/assets/slider/owlcarousel/owl.carousel.js"></script>
+</body>
+</html>
